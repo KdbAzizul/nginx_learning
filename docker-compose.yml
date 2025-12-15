@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  node-app-1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: node_app_1
+    ports:
+      - "3001:3000" # Map container's port 3000 to host's port 3001
+    restart: unless-stopped
+
+  node-app-2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: node_app_2
+    ports:
+      - "3002:3000" # Map container's port 3000 to host's port 3002
+    restart: unless-stopped
+
+  node-app-3:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: node_app_3
+    ports:
+      - "3003:3000" # Map container's port 3000 to host's port 3003
+    restart: unless-stopped
