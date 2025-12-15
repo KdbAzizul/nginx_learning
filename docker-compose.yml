@@ -8,6 +8,8 @@ services:
     container_name: node_app_1
     ports:
       - "2222:3000" # Map container's port 3000 to host's port 3001
+    environment:
+      - APP_ID=Container_One
     restart: unless-stopped
 
   node-app-2:
@@ -17,6 +19,8 @@ services:
     container_name: node_app_2
     ports:
       - "3333:3000" # Map container's port 3000 to host's port 3002
+    environment:
+      - APP_ID=Container_Two
     restart: unless-stopped
 
   node-app-3:
@@ -26,4 +30,6 @@ services:
     container_name: node_app_3
     ports:
       - "4444:3000" # Map container's port 3000 to host's port 3003
+    environment:
+      - APP_ID=Container_Three
     restart: unless-stopped
