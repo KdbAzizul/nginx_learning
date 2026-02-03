@@ -1,3 +1,4 @@
+```
 int main(){
     int x = 3, y = 2; // x = $s0, y = $s1
     int limit = 50; // limit = $s2
@@ -18,10 +19,10 @@ int main(){
     
     return 0;
 }
-
+```
 
 solution=>
-
+```
 main:
         # initialize variables
         li   $s0, 3        # x = 3
@@ -62,3 +63,4 @@ end_if:
         # return 0
         li   $v0, 10
         syscall
+```
