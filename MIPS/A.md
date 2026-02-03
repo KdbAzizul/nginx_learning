@@ -12,7 +12,7 @@ void recursiveCopy(char dest[], char src[], int i, int j) {
 
         .text
         .globl recursiveCopy
-
+```
 recursiveCopy:
         # Stack frame
         addi $sp, $sp, -20
@@ -57,3 +57,4 @@ end_function:
         lw   $ra, 16($sp)
         addi $sp, $sp, 20
         jr   $ra
+```
