@@ -1,3 +1,4 @@
+```
 void recursiveCopy(char dest[], char src[], int i, int j) {
     if (src[i] == '\0') {
         dest[j] = '\0';
@@ -6,7 +7,7 @@ void recursiveCopy(char dest[], char src[], int i, int j) {
     recursiveCopy(dest, src, i + 1, j - 1);
     dest[j] = src[i]; 
 }
-
+```
 
 
         .text
